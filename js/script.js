@@ -1,14 +1,14 @@
-// Print N numbers in sequence
+// // Print N numbers in sequence
 
-var input = 1;
-while (input <= 10) {
- console.log(input);
- input++;
-}
+// var input = 1;
+// while (input <= 10) {
+//  console.log(input);
+//  input++;
+// }
 
 
 
-// Print reverse of a number
+// // Print reverse of a number
 
 let rev = 0;
 let num = 123;
@@ -84,12 +84,11 @@ console.log(factorial(number));
 
 // Prime or Not
 
-var numbers = 7;
-var i = 1;
+var numbers = 12;
 var count = 0;
 
 for(i=1; i<=numbers; i++)
-{
+{ 
  if(numbers % i == 0)
   count++;
 }
@@ -201,3 +200,18 @@ for (var i = 0; i<=5; i++) {
   a = b;
   b = tempo;
 }
+
+
+//456
+
+var sumnum = 456;
+var sum = 0;
+
+while(sumnum != 0){
+  sum += sumnum % 10;
+  sumnum = parseInt(sumnum/10);
+}
+
+console.log(sum);
+
+//
