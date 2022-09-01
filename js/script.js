@@ -11,7 +11,7 @@ while (input <= 10) {
 // Print reverse of a number
 
 let rev = 0;
-let num = 123456;
+let num = 123;
 let lastDigit;
 
 while(num != 0){
@@ -49,7 +49,7 @@ for(var i = 1; i <= n; i = i + 2)
 // Check number is Armstrong or not
 
 
-var n = 153;
+var n = 456;
 let temp = n;
 let p = 0;
 
@@ -70,11 +70,11 @@ else {
 
 // Factorial
 
-const number = 14;
+const number = 6;
 const factorial = number => {
    let res = 1;
    for(let i = number; i > 1; i--){
-      res *= i;
+      res *= i; //res = res * i;
    };
    return res;
 };
@@ -132,38 +132,54 @@ function prime(max)
 console.log(prime(10));
 
 
-// Print Fibonacci series
+// Fibonacci series
 
-
-var fibon=6, firstNum = 0, secondNum = 1;
-
-var next;
-
-for ( var i = 0; i < fibon; i++)
-{
-
-console.log(firstNum);
-
-sum = firstNum + secondNum;
-
-firstNum = secondNum;
-
-secondNum = sum;
-
+var a = 0, b = 1;
+console.log(a)
+console.log(b)
+for (var i = 0; i<=10; i++) {
+  var tempo = a + b;
+  console.log(tempo);
+  a = b;
+  b = tempo;
 }
 
 
 
 // Factorial
 
-function factorialize(factNum) {
-  var result = factNum;
-  if (factNum === 0 || factNum === 1) 
-    return 1; 
-  while (factNum > 1) { 
-    factNum--;
-    result *= factNum;
-  }
-  return console.log(result);
+var i, no, fact;
+fact = 1;
+no = 6;
+for(i = 1; i <= no; i++) {
+  fact = fact * i;
 }
-factorialize(5);
+console.log("Factorial: " + fact);
+
+
+
+// Reverse a number
+
+var revno  = 12345;
+var reverse = 0;
+
+while(revno != 0) {
+  reverse = (reverse*10) + (revno % 10);
+  revno = parseInt(revno/10);
+}
+
+console.log(reverse);
+
+
+
+// Sum of digits
+
+var sumNumber = 12345;
+var sum = 0;
+
+while(sumNumber != 0) {
+  sum = sum + sumNumber % 10;
+  sumNumber = parseInt(sumNumber/10);
+}
+
+console.log(sum);
