@@ -132,17 +132,7 @@ function prime(max)
 console.log(prime(10));
 
 
-// Fibonacci series
 
-var a = 0, b = 1;
-console.log(a)
-console.log(b)
-for (var i = 0; i<=10; i++) {
-  var tempo = a + b;
-  console.log(tempo);
-  a = b;
-  b = tempo;
-}
 
 
 
@@ -183,3 +173,31 @@ while(sumNumber != 0) {
 }
 
 console.log(sum);
+
+
+//prime number with range
+
+for (var counter = 0; counter <= 15; counter++) {
+
+  var notPrime = false;
+  for (var i = 2; i <= counter; i++) {
+      if (counter%i===0 && i!==counter) {
+          notPrime = true;
+      }
+  }
+  if (notPrime === false) {
+              console.log(counter);
+  }
+}
+
+// Fibonacci series
+
+var a = 0, b = 1;
+console.log(a)
+console.log(b)
+for (var i = 0; i<=5; i++) {
+  var tempo = a + b;
+  console.log(tempo);
+  a = b;
+  b = tempo;
+}
