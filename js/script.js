@@ -214,4 +214,3 @@ while(sumnum != 0){
 
 console.log(sum);
 
-//
